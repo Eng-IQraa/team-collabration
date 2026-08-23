@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <meta
+        name="description"
+        content="MERN Team Project - A modern university team project built with MongoDB, Express.js, React.js and Node.js."
+    >
+
     <title>MERN Team Project</title>
 
     <link rel="stylesheet" href="style.css">
@@ -11,240 +16,1358 @@
 
 <body>
 
-    <!-- Navbar -->
-    <header>
-        <nav class="navbar">
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+    <header class="site-header" id="siteHeader">
+        <nav class="navbar container">
 
-            <div class="logo">
-                MERN Project
+            <a href="#home" class="logo">
+                <span class="logo-mark">&lt;/&gt;</span>
+                <span>MERN<span class="logo-accent">Team</span></span>
+            </a>
+
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#team" class="nav-link">Team</a>
+                <a href="#contact" class="nav-link">Contact</a>
+
+                <div class="nav-actions">
+                    <button
+                        class="theme-toggle"
+                        id="themeToggle"
+                        aria-label="Toggle dark mode"
+                        title="Toggle theme"
+                    >
+                        <span id="themeIcon">☾</span>
+                    </button>
+
+                    <a href="#login" class="btn btn-outline btn-small">
+                        Login
+                    </a>
+
+                    <a href="#register" class="btn btn-primary btn-small">
+                        Register
+                    </a>
+                </div>
             </div>
-
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#login">Login</a></li>
-            </ul>
-
         </nav>
     </header>
 
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
+    <main>
 
-        <div class="hero-content">
+        <!-- =========================
+             HERO
+        ========================== -->
+        <section class="hero section" id="home">
 
-            <h1>
-                Welcome to Our MERN Project
-            </h1>
+            <div class="hero-background"></div>
 
-            <p>
-                A modern and simple web application built using
-                MongoDB, Express.js, React, and Node.js.
-            </p>
+            <div class="container hero-container">
 
-            <div class="hero-buttons">
-                <a href="#services" class="btn primary-btn">
-                    Get Started
+                <div class="hero-content reveal">
+                    <span class="eyebrow">
+                        <span class="status-dot"></span>
+                        University Team Project
+                    </span>
+
+                    <h1>
+                        Building the Future with
+                        <span class="gradient-text">MERN Stack</span>
+                    </h1>
+
+                    <p>
+                        A modern team-based web application built using
+                        MongoDB, Express.js, React.js and Node.js.
+                        Designed for collaboration, performance and scalability.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="#features" class="btn btn-primary">
+                            Explore Features
+                            <span>→</span>
+                        </a>
+
+                        <a href="#about" class="btn btn-secondary">
+                            Learn More
+                        </a>
+                    </div>
+
+                    <div class="hero-tech">
+                        <span>MongoDB</span>
+                        <span>Express</span>
+                        <span>React</span>
+                        <span>Node.js</span>
+                    </div>
+                </div>
+
+
+                <div class="hero-visual reveal">
+
+                    <div class="code-window">
+
+                        <div class="window-header">
+                            <div class="window-dots">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+
+                            <span class="window-title">
+                                mern-team-project
+                            </span>
+                        </div>
+
+                        <div class="code-content">
+<pre><span class="code-purple">const</span> project = {
+    <span class="code-blue">frontend</span>: <span class="code-green">"React.js"</span>,
+    <span class="code-blue">backend</span>: <span class="code-green">"Node.js"</span>,
+    <span class="code-blue">api</span>: <span class="code-green">"Express.js"</span>,
+    <span class="code-blue">database</span>: <span class="code-green">"MongoDB"</span>,
+    <span class="code-blue">teamwork</span>: <span class="code-green">"Git + GitHub"</span>
+};</pre>
+                        </div>
+
+                    </div>
+
+                    <div class="floating-card floating-card-one">
+                        <span class="floating-icon">⚡</span>
+                        <div>
+                            <strong>Fast</strong>
+                            <small>Performance</small>
+                        </div>
+                    </div>
+
+                    <div class="floating-card floating-card-two">
+                        <span class="floating-icon">✓</span>
+                        <div>
+                            <strong>Secure</strong>
+                            <small>Authentication</small>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- =========================
+             FEATURES
+        ========================== -->
+        <section class="section" id="features">
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+                    <span class="section-label">FEATURES</span>
+
+                    <h2>
+                        Everything We Need to
+                        <span class="gradient-text">Build Better</span>
+                    </h2>
+
+                    <p>
+                        Our project combines modern technologies and development
+                        practices to create a reliable and scalable application.
+                    </p>
+                </div>
+
+
+                <div class="features-grid">
+
+                    <article class="feature-card reveal">
+                        <div class="feature-icon">⚡</div>
+                        <h3>Fast Performance</h3>
+                        <p>
+                            Optimized frontend structure designed to provide
+                            a smooth and responsive user experience.
+                        </p>
+                        <span class="feature-number">01</span>
+                    </article>
+
+
+                    <article class="feature-card reveal">
+                        <div class="feature-icon">🔐</div>
+                        <h3>Secure Authentication</h3>
+                        <p>
+                            Frontend authentication interfaces prepared for
+                            secure backend authentication integration.
+                        </p>
+                        <span class="feature-number">02</span>
+                    </article>
+
+
+                    <article class="feature-card reveal">
+                        <div class="feature-icon">📱</div>
+                        <h3>Responsive Design</h3>
+                        <p>
+                            Designed to work beautifully across desktops,
+                            tablets and mobile devices.
+                        </p>
+                        <span class="feature-number">03</span>
+                    </article>
+
+
+                    <article class="feature-card reveal">
+                        <div class="feature-icon">🍃</div>
+                        <h3>MongoDB Database</h3>
+                        <p>
+                            Ready to store application data using a flexible
+                            NoSQL database architecture.
+                        </p>
+                        <span class="feature-number">04</span>
+                    </article>
+
+
+                    <article class="feature-card reveal">
+                        <div class="feature-icon">🔗</div>
+                        <h3>REST API</h3>
+                        <p>
+                            Structured frontend interfaces prepared for
+                            RESTful API communication with Express.js.
+                        </p>
+                        <span class="feature-number">05</span>
+                    </article>
+
+
+                    <article class="feature-card reveal">
+                        <div class="feature-icon">⚛</div>
+                        <h3>React Frontend</h3>
+                        <p>
+                            The interface is organized into reusable sections
+                            that can easily be converted into React components.
+                        </p>
+                        <span class="feature-number">06</span>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- =========================
+             ABOUT
+        ========================== -->
+        <section class="section about-section" id="about">
+
+            <div class="container">
+
+                <div class="about-grid">
+
+                    <div class="about-visual reveal">
+
+                        <div class="stack-card">
+                            <div class="stack-card-header">
+                                <span class="stack-status"></span>
+                                MERN Stack
+                            </div>
+
+                            <div class="stack-list">
+
+                                <div class="stack-item">
+                                    <span class="stack-logo mongodb">M</span>
+                                    <div>
+                                        <strong>MongoDB</strong>
+                                        <small>Database</small>
+                                    </div>
+                                    <span>01</span>
+                                </div>
+
+                                <div class="stack-item">
+                                    <span class="stack-logo express">Ex</span>
+                                    <div>
+                                        <strong>Express.js</strong>
+                                        <small>Backend Framework</small>
+                                    </div>
+                                    <span>02</span>
+                                </div>
+
+                                <div class="stack-item">
+                                    <span class="stack-logo react">⚛</span>
+                                    <div>
+                                        <strong>React.js</strong>
+                                        <small>Frontend Library</small>
+                                    </div>
+                                    <span>03</span>
+                                </div>
+
+                                <div class="stack-item">
+                                    <span class="stack-logo node">N</span>
+                                    <div>
+                                        <strong>Node.js</strong>
+                                        <small>Runtime Environment</small>
+                                    </div>
+                                    <span>04</span>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="about-content reveal">
+
+                        <span class="section-label">ABOUT PROJECT</span>
+
+                        <h2>
+                            A Team Project Built
+                            <span class="gradient-text">Together</span>
+                        </h2>
+
+                        <p>
+                            This is a university team project developed to
+                            demonstrate practical knowledge of full-stack
+                            web development using the MERN stack.
+                        </p>
+
+                        <p>
+                            The system brings together MongoDB, Express.js,
+                            React.js and Node.js into one modern application
+                            architecture.
+                        </p>
+
+
+                        <div class="about-points">
+
+                            <div class="about-point">
+                                <span>✓</span>
+                                <div>
+                                    <strong>Modern Technology</strong>
+                                    <p>
+                                        Built around the popular MERN
+                                        development ecosystem.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="about-point">
+                                <span>✓</span>
+                                <div>
+                                    <strong>Team Collaboration</strong>
+                                    <p>
+                                        Git and GitHub help team members
+                                        work together efficiently.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="about-point">
+                                <span>✓</span>
+                                <div>
+                                    <strong>Future Ready</strong>
+                                    <p>
+                                        The frontend is structured for easy
+                                        backend and React integration.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Git collaboration -->
+                <div class="collaboration-card reveal">
+
+                    <div class="collaboration-icon">⌘</div>
+
+                    <div class="collaboration-content">
+                        <span class="section-label">TEAM COLLABORATION</span>
+
+                        <h3>Working Together with Git & GitHub</h3>
+
+                        <p>
+                            Team members can create branches, make changes,
+                            commit their work and merge contributions through
+                            Git and GitHub.
+                        </p>
+                    </div>
+
+                    <a
+                        href="https://github.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="btn btn-secondary"
+                    >
+                        Visit GitHub →
+                    </a>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- =========================
+             TEAM
+        ========================== -->
+        <section class="section" id="team">
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+
+                    <span class="section-label">OUR TEAM</span>
+
+                    <h2>
+                        Meet the
+                        <span class="gradient-text">Team</span>
+                    </h2>
+
+                    <p>
+                        A collaborative team working together to build
+                        and improve this MERN project.
+                    </p>
+
+                </div>
+
+
+                <div class="team-grid">
+
+                    <article class="team-card reveal">
+
+                        <div class="profile-placeholder">
+                            <span>AM</span>
+                        </div>
+
+                        <h3>Alex Mohamed</h3>
+                        <span class="team-role">Frontend Developer</span>
+
+                        <p>
+                            Focuses on creating clean, responsive and
+                            user-friendly interfaces.
+                        </p>
+
+                        <div class="team-links">
+                            <a
+                                href="https://github.com/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                GitHub
+                            </a>
+
+                            <a
+                                href="https://www.linkedin.com/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                LinkedIn
+                            </a>
+                        </div>
+
+                    </article>
+
+
+                    <article class="team-card reveal">
+
+                        <div class="profile-placeholder">
+                            <span>IS</span>
+                        </div>
+
+                        <h3>Iqra Yusuf</h3>
+                        <span class="team-role">Full Stack Developer</span>
+
+                        <p>
+                            Works across frontend and backend development
+                            and coordinates project integration.
+                        </p>
+
+                        <div class="team-links">
+                            <a
+                                href="https://github.com/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                GitHub
+                            </a>
+
+                            <a
+                                href="https://www.linkedin.com/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                LinkedIn
+                            </a>
+                        </div>
+
+                    </article>
+
+
+                    <article class="team-card reveal">
+
+                        <div class="profile-placeholder">
+                            <span>MA</span>
+                        </div>
+
+                        <h3>Mohamed Ali</h3>
+                        <span class="team-role">Backend Developer</span>
+
+                        <p>
+                            Focuses on API architecture, server-side logic
+                            and future database integration.
+                        </p>
+
+                        <div class="team-links">
+                            <a
+                                href="https://github.com/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                GitHub
+                            </a>
+
+                            <a
+                                href="https://www.linkedin.com/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                LinkedIn
+                            </a>
+                        </div>
+
+                    </article>
+
+
+                    <article class="team-card reveal">
+
+                        <div class="profile-placeholder">
+                            <span>FH</span>
+                        </div>
+
+                        <h3>Fatima Hassan</h3>
+                        <span class="team-role">UI/UX & QA</span>
+
+                        <p>
+                            Helps improve usability, visual consistency
+                            and overall application quality.
+                        </p>
+
+                        <div class="team-links">
+                            <a
+                                href="https://github.com/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                GitHub
+                            </a>
+
+                            <a
+                                href="https://www.linkedin.com/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                LinkedIn
+                            </a>
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- =========================
+             CONTACT
+        ========================== -->
+        <section class="section contact-section" id="contact">
+
+            <div class="container">
+
+                <div class="contact-grid">
+
+                    <div class="contact-info reveal">
+
+                        <span class="section-label">CONTACT US</span>
+
+                        <h2>
+                            Let's Start a
+                            <span class="gradient-text">Conversation</span>
+                        </h2>
+
+                        <p>
+                            Have a question about our project?
+                            Send us a message using the form.
+                        </p>
+
+                        <div class="contact-details">
+
+                            <div class="contact-detail">
+                                <span>✉</span>
+                                <div>
+                                    <small>Email</small>
+                                    <strong>team@example.com</strong>
+                                </div>
+                            </div>
+
+                            <div class="contact-detail">
+                                <span>⌖</span>
+                                <div>
+                                    <small>Project</small>
+                                    <strong>MERN Team Project</strong>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <form class="form-card reveal" id="contactForm" novalidate>
+
+                        <div class="form-row">
+
+                            <div class="form-group">
+                                <label for="contactName">Full Name</label>
+
+                                <input
+                                    type="text"
+                                    id="contactName"
+                                    name="name"
+                                    placeholder="Your full name"
+                                    autocomplete="name"
+                                >
+
+                                <small class="field-error" id="contactNameError"></small>
+                            </div>
+
+
+                            <div class="form-group">
+                                <label for="contactEmail">Email</label>
+
+                                <input
+                                    type="email"
+                                    id="contactEmail"
+                                    name="email"
+                                    placeholder="you@example.com"
+                                    autocomplete="email"
+                                >
+
+                                <small class="field-error" id="contactEmailError"></small>
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="contactSubject">Subject</label>
+
+                            <input
+                                type="text"
+                                id="contactSubject"
+                                name="subject"
+                                placeholder="How can we help?"
+                            >
+
+                            <small class="field-error" id="contactSubjectError"></small>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="contactMessage">Message</label>
+
+                            <textarea
+                                id="contactMessage"
+                                name="message"
+                                rows="5"
+                                placeholder="Write your message..."
+                            ></textarea>
+
+                            <small class="field-error" id="contactMessageError"></small>
+                        </div>
+
+
+                        <button
+                            type="submit"
+                            class="btn btn-primary btn-full"
+                            id="contactSubmit"
+                        >
+                            <span class="button-text">Send Message</span>
+                            <span class="button-loader"></span>
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- =========================
+             LOGIN
+        ========================== -->
+        <section class="section auth-section" id="login">
+
+            <div class="auth-container container">
+
+                <div class="auth-card reveal">
+
+                    <div class="auth-header">
+                        <div class="auth-icon">↪</div>
+
+                        <span class="section-label">WELCOME BACK</span>
+
+                        <h2>Login to Your Account</h2>
+
+                        <p>
+                            Frontend login interface ready for backend integration.
+                        </p>
+                    </div>
+
+
+                    <form id="loginForm" novalidate>
+
+                        <div class="form-group">
+                            <label for="loginEmail">Email</label>
+
+                            <input
+                                type="email"
+                                id="loginEmail"
+                                placeholder="you@example.com"
+                                autocomplete="email"
+                            >
+
+                            <small class="field-error" id="loginEmailError"></small>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="loginPassword">Password</label>
+
+                            <div class="password-wrapper">
+
+                                <input
+                                    type="password"
+                                    id="loginPassword"
+                                    placeholder="Enter your password"
+                                    autocomplete="current-password"
+                                >
+
+                                <button
+                                    type="button"
+                                    class="password-toggle"
+                                    data-target="loginPassword"
+                                    aria-label="Show password"
+                                >
+                                    Show
+                                </button>
+
+                            </div>
+
+                            <small class="field-error" id="loginPasswordError"></small>
+                        </div>
+
+
+                        <div class="auth-options">
+
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="rememberMe">
+                                <span>Remember me</span>
+                            </label>
+
+                            <a href="#contact" class="text-link">
+                                Forgot password?
+                            </a>
+
+                        </div>
+
+
+                        <button
+                            type="submit"
+                            class="btn btn-primary btn-full"
+                        >
+                            Login
+                        </button>
+
+                    </form>
+
+
+                    <p class="auth-footer">
+                        Don't have an account?
+                        <a href="#register" class="text-link">
+                            Create one
+                        </a>
+                    </p>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- =========================
+             REGISTER
+        ========================== -->
+        <section class="section auth-section register-section" id="register">
+
+            <div class="auth-container container">
+
+                <div class="auth-card reveal">
+
+                    <div class="auth-header">
+
+                        <div class="auth-icon">+</div>
+
+                        <span class="section-label">GET STARTED</span>
+
+                        <h2>Create an Account</h2>
+
+                        <p>
+                            Create your frontend account and connect it
+                            to the MERN backend later.
+                        </p>
+
+                    </div>
+
+
+                    <form id="registerForm" novalidate>
+
+                        <div class="form-group">
+
+                            <label for="registerName">
+                                Full Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="registerName"
+                                placeholder="Your full name"
+                                autocomplete="name"
+                            >
+
+                            <small
+                                class="field-error"
+                                id="registerNameError"
+                            ></small>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="registerEmail">
+                                Email
+                            </label>
+
+                            <input
+                                type="email"
+                                id="registerEmail"
+                                placeholder="you@example.com"
+                                autocomplete="email"
+                            >
+
+                            <small
+                                class="field-error"
+                                id="registerEmailError"
+                            ></small>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="registerPassword">
+                                Password
+                            </label>
+
+                            <div class="password-wrapper">
+
+                                <input
+                                    type="password"
+                                    id="registerPassword"
+                                    placeholder="Minimum 6 characters"
+                                    autocomplete="new-password"
+                                >
+
+                                <button
+                                    type="button"
+                                    class="password-toggle"
+                                    data-target="registerPassword"
+                                    aria-label="Show password"
+                                >
+                                    Show
+                                </button>
+
+                            </div>
+
+                            <small
+                                class="field-error"
+                                id="registerPasswordError"
+                            ></small>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="confirmPassword">
+                                Confirm Password
+                            </label>
+
+                            <div class="password-wrapper">
+
+                                <input
+                                    type="password"
+                                    id="confirmPassword"
+                                    placeholder="Repeat your password"
+                                    autocomplete="new-password"
+                                >
+
+                                <button
+                                    type="button"
+                                    class="password-toggle"
+                                    data-target="confirmPassword"
+                                    aria-label="Show password"
+                                >
+                                    Show
+                                </button>
+
+                            </div>
+
+                            <small
+                                class="field-error"
+                                id="confirmPasswordError"
+                            ></small>
+
+                        </div>
+
+
+                        <button
+                            type="submit"
+                            class="btn btn-primary btn-full"
+                        >
+                            Create Account
+                        </button>
+
+                    </form>
+
+
+                    <p class="auth-footer">
+                        Already have an account?
+                        <a href="#login" class="text-link">
+                            Login
+                        </a>
+                    </p>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- =========================
+             DASHBOARD
+        ========================== -->
+        <section class="section dashboard-section" id="dashboard">
+
+            <div class="container">
+
+                <div class="dashboard-layout">
+
+                    <!-- Sidebar -->
+                    <aside class="dashboard-sidebar">
+
+                        <div class="dashboard-brand">
+                            <span class="logo-mark">&lt;/&gt;</span>
+                            <strong>MERN Panel</strong>
+                        </div>
+
+
+                        <nav class="dashboard-nav">
+
+                            <a href="#dashboard" class="dashboard-link active">
+                                <span>⌂</span>
+                                Overview
+                            </a>
+
+                            <a href="#features" class="dashboard-link">
+                                <span>◈</span>
+                                Features
+                            </a>
+
+                            <a href="#team" class="dashboard-link">
+                                <span>♟</span>
+                                Team
+                            </a>
+
+                            <a href="#contact" class="dashboard-link">
+                                <span>✉</span>
+                                Messages
+                            </a>
+
+                        </nav>
+
+
+                        <button
+                            class="dashboard-logout"
+                            id="logoutButton"
+                        >
+                            <span>↪</span>
+                            Logout
+                        </button>
+
+                    </aside>
+
+
+                    <!-- Dashboard main -->
+                    <div class="dashboard-main">
+
+                        <div class="dashboard-topbar">
+
+                            <div>
+                                <span class="section-label">
+                                    DASHBOARD
+                                </span>
+
+                                <h2>
+                                    Welcome back,
+                                    <span id="dashboardUser">
+                                        Team Member
+                                    </span>
+                                </h2>
+                            </div>
+
+
+                            <div class="dashboard-profile">
+
+                                <div class="mini-avatar">
+                                    TM
+                                </div>
+
+                                <div>
+                                    <strong>Team Member</strong>
+                                    <small>Project Member</small>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Statistics -->
+                        <div class="stats-grid">
+
+                            <div class="stat-card">
+                                <span class="stat-icon">👥</span>
+                                <div>
+                                    <small>Team Members</small>
+                                    <strong>04</strong>
+                                </div>
+                            </div>
+
+                            <div class="stat-card">
+                                <span class="stat-icon">✓</span>
+                                <div>
+                                    <small>Tasks Completed</small>
+                                    <strong>24</strong>
+                                </div>
+                            </div>
+
+                            <div class="stat-card">
+                                <span class="stat-icon">◈</span>
+                                <div>
+                                    <small>Features</small>
+                                    <strong>06</strong>
+                                </div>
+                            </div>
+
+                            <div class="stat-card">
+                                <span class="stat-icon">◉</span>
+                                <div>
+                                    <small>Project Status</small>
+                                    <strong>Active</strong>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="dashboard-content-grid">
+
+                            <!-- Recent activity -->
+                            <div class="dashboard-panel">
+
+                                <div class="panel-header">
+                                    <div>
+                                        <span class="section-label">
+                                            ACTIVITY
+                                        </span>
+                                        <h3>Recent Activity</h3>
+                                    </div>
+
+                                    <span class="live-badge">
+                                        Live
+                                    </span>
+                                </div>
+
+
+                                <div class="activity-list">
+
+                                    <div class="activity-item">
+                                        <span class="activity-icon">✓</span>
+
+                                        <div>
+                                            <strong>
+                                                Frontend structure updated
+                                            </strong>
+
+                                            <small>
+                                                Today · 10:20 AM
+                                            </small>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="activity-item">
+                                        <span class="activity-icon">⌘</span>
+
+                                        <div>
+                                            <strong>
+                                                Team collaboration started
+                                            </strong>
+
+                                            <small>
+                                                Today · 09:40 AM
+                                            </small>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="activity-item">
+                                        <span class="activity-icon">+</span>
+
+                                        <div>
+                                            <strong>
+                                                New feature added
+                                            </strong>
+
+                                            <small>
+                                                Yesterday · 04:15 PM
+                                            </small>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="activity-item">
+                                        <span class="activity-icon">⚡</span>
+
+                                        <div>
+                                            <strong>
+                                                UI performance improved
+                                            </strong>
+
+                                            <small>
+                                                Yesterday · 01:30 PM
+                                            </small>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- Profile -->
+                            <div class="dashboard-panel profile-panel">
+
+                                <div class="panel-header">
+                                    <div>
+                                        <span class="section-label">
+                                            PROFILE
+                                        </span>
+                                        <h3>User Profile</h3>
+                                    </div>
+                                </div>
+
+
+                                <div class="profile-large">
+
+                                    <div class="profile-avatar-large">
+                                        TM
+                                    </div>
+
+                                    <h3>Team Member</h3>
+
+                                    <span>
+                                        Project Contributor
+                                    </span>
+
+                                    <p>
+                                        This profile section can later
+                                        display data retrieved from MongoDB.
+                                    </p>
+
+                                    <button
+                                        class="btn btn-secondary btn-full"
+                                        type="button"
+                                        onclick="showToast('Profile editing will be connected to the backend later.', 'info')"
+                                    >
+                                        Edit Profile
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         TOAST CONTAINER
+    ========================== -->
+    <div
+        class="toast-container"
+        id="toastContainer"
+        aria-live="polite"
+        aria-atomic="true"
+    ></div>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-grid">
+
+                <div class="footer-brand">
+
+                    <a href="#home" class="logo">
+                        <span class="logo-mark">&lt;/&gt;</span>
+                        <span>MERN<span class="logo-accent">Team</span></span>
+                    </a>
+
+                    <p>
+                        A modern university team project demonstrating
+                        full-stack development with the MERN stack.
+                    </p>
+
+                    <div class="social-links">
+
+                        <a
+                            href="https://github.com/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="GitHub"
+                        >
+                            GH
+                        </a>
+
+                        <a
+                            href="https://www.linkedin.com/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="LinkedIn"
+                        >
+                            in
+                        </a>
+
+                        <a
+                            href="#contact"
+                            aria-label="Contact"
+                        >
+                            @
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="footer-column">
+
+                    <h4>Quick Links</h4>
+
+                    <a href="#home">Home</a>
+                    <a href="#features">Features</a>
+                    <a href="#about">About</a>
+                    <a href="#team">Team</a>
+
+                </div>
+
+
+                <div class="footer-column">
+
+                    <h4>Project</h4>
+
+                    <a href="#login">Login</a>
+                    <a href="#register">Register</a>
+                    <a href="#dashboard">Dashboard</a>
+                    <a href="#contact">Contact</a>
+
+                </div>
+
+
+                <div class="footer-column">
+
+                    <h4>Technology</h4>
+
+                    <span>MongoDB</span>
+                    <span>Express.js</span>
+                    <span>React.js</span>
+                    <span>Node.js</span>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                <p>
+                    © <span id="currentYear"></span>
+                    MERN Team Project. All rights reserved.
+                </p>
+
+                <a
+                    href="https://github.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    View on GitHub →
                 </a>
 
-                <a href="#about" class="btn secondary-btn">
-                    Learn More
-                </a>
             </div>
 
         </div>
-
-    </section>
-
-
-    <!-- Services Section -->
-    <section id="services" class="services">
-
-        <div class="section-title">
-            <h2>Our Features</h2>
-
-            <p>
-                Explore some of the main features of our application.
-            </p>
-        </div>
-
-
-        <div class="cards">
-
-            <!-- Card 1 -->
-            <div class="card">
-
-                <div class="icon">
-                    🚀
-                </div>
-
-                <h3>Fast Performance</h3>
-
-                <p>
-                    Our application is designed to provide
-                    a fast and smooth user experience.
-                </p>
-
-            </div>
-
-
-            <!-- Card 2 -->
-            <div class="card">
-
-                <div class="icon">
-                    🔒
-                </div>
-
-                <h3>Secure System</h3>
-
-                <p>
-                    We focus on keeping user information
-                    safe and protected.
-                </p>
-
-            </div>
-
-
-            <!-- Card 3 -->
-            <div class="card">
-
-                <div class="icon">
-                    📱
-                </div>
-
-                <h3>Responsive Design</h3>
-
-                <p>
-                    The application works well on phones,
-                    tablets, and computers.
-                </p>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- About Section -->
-    <section id="about" class="about">
-
-        <div class="about-content">
-
-            <div class="about-text">
-
-                <h2>About Our Project</h2>
-
-                <p>
-                    This project is developed as a beginner-friendly
-                    MERN stack application. It demonstrates how
-                    modern web technologies can work together to
-                    create a complete web system.
-                </p>
-
-                <p>
-                    Our team is working together using Git and GitHub
-                    to manage the project and collaborate efficiently.
-                </p>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-
-        <div class="section-title">
-
-            <h2>Contact Us</h2>
-
-            <p>
-                Have a question? Send us a message.
-            </p>
-
-        </div>
-
-
-        <form class="contact-form">
-
-            <input
-                type="text"
-                placeholder="Your Name"
-                required
-            >
-
-            <input
-                type="email"
-                placeholder="Your Email"
-                required
-            >
-
-            <textarea
-                rows="5"
-                placeholder="Your Message"
-                required
-            ></textarea>
-
-            <button type="submit" class="btn primary-btn">
-                Send Message
-            </button>
-
-        </form>
-
-    </section>
-
-
-    <!-- Login Section -->
-    <section id="login" class="login">
-
-        <div class="section-title">
-
-            <h2>Login</h2>
-
-            <p>
-                Login functionality will be connected later.
-            </p>
-
-        </div>
-
-        <div class="login-box">
-
-            <input
-                type="email"
-                placeholder="Email"
-            >
-
-            <input
-                type="password"
-                placeholder="Password"
-            >
-
-            <button class="btn primary-btn">
-                Login
-            </button>
-
-        </div>
-
-    </section>
-
-
-    <!-- Footer -->
-    <footer>
-
-        <p>
-            © 2026 MERN Team Project. All rights reserved.
-        </p>
 
     </footer>
 
 
-    <!-- JavaScript -->
     <script src="script.js"></script>
 
 </body>
